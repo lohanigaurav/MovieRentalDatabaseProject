@@ -1,0 +1,1991 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Nine Months' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;1&quot;'>
+        <calculation class='tableau' formula='&quot;1&quot;' />
+      </column>
+    </datasource>
+    <datasource caption='Custom SQL Query (MovieRental) (2)' inline='true' name='federated.0c9bfhd13nrwao137h17j17pbihn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LAPTOP-F32MPTHA\GAURAVLOHANI' name='sqlserver.16bmxr71lin2u619safwa12shqwv'>
+            <connection authentication='sqlserver' class='sqlserver' dbname='MovieRental' odbc-native-protocol='yes' one-time-sql='' server='LAPTOP-F32MPTHA\GAURAVLOHANI' username='sa' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.16bmxr71lin2u619safwa12shqwv' name='Custom SQL Query' type='text'>Select * from Movie</relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>MovieID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MovieID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>MovieID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MovieName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MovieName]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>MovieName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LanguageID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LanguageID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>LanguageID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DirectorID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DirectorID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>DirectorID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LocationID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LocationID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>LocationID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GenreID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GenreID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>GenreID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatingID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RatingID]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>RatingID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReleaseDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ReleaseDate]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>ReleaseDate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[MovieName]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[MovieName]' derivation='None' name='[none:MovieName:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.272527' measure-ordering='alphabetic' measure-percentage='0.547253' parameter-percentage='0.18022' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:MovieName:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Adult Camp&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bad Lieutenant: Port of Call New Orleans&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Blood Creek (a.k.a. Town Creek)&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cairo Time&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Code, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Days of Glory (Indigènes)&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dreams That Money Can Buy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fluffer, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Green Lantern: First Flight&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Honeymoon Killers, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Inside Daisy Clover&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Last Movie, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lost and Found&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mark of Zorro, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mother&apos;s Courage: Talking Back to Autism, A&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;No Logo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Petits ruisseaux, Les&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ran&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Set-Up, The&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Song of the Sea&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sucker Punch&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Reverse&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Unleashed (Danny the Dog)&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Wings (Krylya)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;7th Voyage of Sinbad, The&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Apollo 18&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BFFs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brick Lane&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cheaper by the Dozen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cremaster 5&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ditirambo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fetishes&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Getaway, The&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hills Have Eyes, The&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Immigrant, The&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kill Me Again&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Little Voice&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mad Dog Time&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mission: Impossible III&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mystery Street&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Oxy-Morons&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Private&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Santa&apos;s Slay&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Small Time Crooks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Steal This Film II&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Baker&apos;s Wife&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trapped in Paradise&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Warriors of Heaven and Earth (Tian di ying xiong)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ziegfeld Follies&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;100 Feet&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Back to the Future Part II&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Blackout, The&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brothers (Brødre)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Clockwork Orange, A&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Daddy Long Legs&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Double Dynamite&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Flight of the Intruder&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Girls! Girls! Girls!&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Holy Rollers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;In the Land of Women&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;L-Shaped Room, The&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lonely Place to Die, A&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Man from Snowy River, The&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Monday Night Mayhem&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nazty Nuisance&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Paraíso Travel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Quiet, The&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Scott of the Antarctic&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Smokey and the Bandit II&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Story of Women (Affaire de femmes, Une)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Message&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Two Days in April&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wild Blue Yonder, The&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;All Quiet on the Western Front&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Battle Royale (Batoru rowaiaru)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bon Cop, Bad Cop&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cape Fear&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Comic Book Confidential&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Defenseless&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Education for Death&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Forbidden Planet&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Guys and Dolls&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;I as in Icarus (I... comme Icare)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jindabyne&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Law Abiding Citizen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Love in Another Language (Baska Dilde Ask)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;May 6th (06/05)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mutant Action (Acción Mutante)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;On Her Majesty&apos;s Secret Service&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Planes, Trains &amp; Automobiles&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Redirected&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sharknado 2: The Second One&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;South Shaolin Master, The (Nan quan wang)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tarzan the Fearless&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Three Little Words&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Vampire Effect (The Twins Effect) (Chin gei bin)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Woodsman, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Adventures of Pluto Nash, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bad Luck (Zezowate szczescie)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Blood of a Poet, The (Sang d&apos;un poète, Le)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;California Solo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Codes of Gender, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Death Note&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Duchess, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;For All Mankind&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grumpier Old Men&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hot Coffee&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Inspector Gadget&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Last Stand At Saber River&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lourdes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mary of Scotland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mothra (Mosura)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nora&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Phantom Tollbooth, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Raven, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sexual Dependency (Dependencia sexual)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Soul Plane&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Survive Style 5+&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Wild World of Lydia Lunch&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Untamed Heart&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wings of Hope (Julianes Sturz in den Dschungel)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1971&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Back-up Plan, The&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blackwoods&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bullitt&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Clonehunter&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dark Blue&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Doug&apos;s 1st Movie&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Floating Weeds (Ukigusa)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Godsend&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Home&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Incredible Petrified World, The&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;La Luna&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Loner (Woetoli)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Man from the Future, The (O Homem do Futuro)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Monkey&apos;s Teeth (Dents du singe, Les)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;New York Cop (Nyû Yôku no koppu)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Park Is Mine, The&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Quiz Show&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Scrooged&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Smokin&apos; Aces&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Stranger by the Lake (L&apos;inconnu du lac)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Monastery of Sendomir&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Two Ninas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wild Child, The (Enfant sauvage, L&apos;)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Anniversary, The&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Belle Starr&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Boy Meets Girl&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chariots of the Gods (Erinnerungen an die Zukunft)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Crackerjack&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Diary of a Nymphomaniac (Diario de una Ninfómana)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Factory Girl&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gatekeepers, The&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hidalgo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Igor&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kanchenjungha&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lilla Jönssonligan och Cornflakeskuppen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lucifer Rising&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Midnight Meat Train, The&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;My Sister&apos;s Keeper&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Outrage (Autoreiji)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Primal Fear&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Salvador (Puig Antich)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ski School&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Stars in Shorts&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Thampu&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Toughguy&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;War&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;You, Me and Dupree&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;39 Steps, The&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ash Wednesday&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Big Brown Eyes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bright Eyes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Choose&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Crows and Sparrows (Wuya yu maque)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Divine Horsemen: The Living Gods of Haiti&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fighter, The&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ghosts of Mississippi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;His Private Secretary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Immortals, The&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Killer Movie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Little Witches&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Major Movie Star&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Möbius&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Natural, The&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;P2&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Quest&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sassy Pants&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Small Town of Anara (Qalaqi Anara)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Stonewall&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Boogens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Trois&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Way Ahead, The (a.k.a. The Immortal Battalion)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Zone, The (La Zona)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Anima Mundi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Beer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bostonians, The&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Champ, The&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Costa Brava&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Designated Mourner, The&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;End of Violence, The&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Funny Lady&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Headless Body in Topless Bar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;I&apos;ll Be Seeing You&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jules and Jim (Jules et Jim)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Letters to Juliet&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Love on the Run (Amour en fuite, L&apos;)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Métamorphose des cloportes, La&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;My Kidnapper&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;One Day in September&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Power of One, The&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Room at the Top&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sins&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Springsteen &amp; I&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tom Horn&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wake Wood&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Yesterday&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Abominable Dr. Phibes, The&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bad Boys&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Blazing Saddles&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;But Forever in My Mind&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cloudburst&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Day in the Life, A&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dr Money and the Boy with No Penis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Flodder&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Goebbels Experiment, The (Das Goebbels Experiment)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Homefront&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Indestructible Man&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;La montaña rusa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Loose Change 9/11: An American Coup&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Man of Steel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Motel Life, The&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Next Best Thing, The&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Patriots, The (Patriotes, Les)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Raanjhanaa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Seasoning House, The&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Snow White and the Huntsman&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Stratosphere Girl&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Natural Love&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Una Noche&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Wild in the Streets&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;All That Heaven Allows&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Beautiful&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Book of Life, The&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Capricious Summer (Rozmarné léto)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Concert, Le&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Demon Seed&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Eight Deadly Shots (Kahdeksan surmanluotia)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Forever Young&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hackers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;I Don&apos;t Want to Sleep Alone (Hei yan quan)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Joe&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lean on Me&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Love Is a Woman (Death Is a Woman)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mean Machine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mutiny on the Bounty&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Once Upon a Time in Queens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pleasure Seekers, The&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Revenge&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;She Gods of Shark Reef&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Splinterheads&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tea For Two&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Time After Time&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Violent Years, The&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;World War Z&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;American Tail, An&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Beautiful Ohio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Born American&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Captivity&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Conclave, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Deranged&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Emperor Waltz, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Frankenstein 90&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hamlet, Prince of Denmark&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;i hate myself :)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Journey to the Beginning of Time&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Legally Blonde 2: Red, White &amp; Blonde&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Love is Eternal While It Lasts&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Meantime&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;My Beautiful Laundrette&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Once Upon a Time in Shanghai&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pool of London&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rewrite, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sidekicks&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Spring Forward&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tender Trap, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;To Do List, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Viva Riva!&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Wrong Turn 4&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Anna and the King of Siam&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Behaving Badly&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bowling for Columbine&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Chan Is Missing&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Crack-Up&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Deuces Wild&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Evidence&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gas, Inspector Palmu! (Kaasua, komisario Palmu!)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Heartbreak Hotel&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ice Age: A Mammoth Christmas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Just love me (Tylko mnie kochaj)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Like Father, Like Son (Soshite chichi ni naru)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Love&apos;s Labour&apos;s Lost&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Midnight Madness&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;My Neighbor Totoro (Tonari no Totoro)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Other Side of Midnight, The&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Prestige, The&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Roxie Hart&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Skeleton Twins, The&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Starbuck&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Texas Rangers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tooth &amp; Nail&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Walk Like a Man&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;You Are So Beautiful (Je vous trouve très beau)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Another Thin Man&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Best Laid Plans&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brake&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Charlie Chan in Shanghai&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cradle 2 the Grave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dillinger and Capone&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fearless Freaks, The&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gayby&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;High Strung&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Illustrious Corpses (Cadaveri eccellenti)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kansas City&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Little Romance, A&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lust for Gold&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mindwarp&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mysterians, The (Chikyu Boeigun)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Over the Edge&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Prime Suspect&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sandpiper, The&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Slaves of New York&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Stavisky...&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The African&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;TPB AFK: The Pirate Bay Away from Keyboard&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;War Stories&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;You&apos;ll Find Out&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Aftermath&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bad Moon&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blueberry&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Campfire Tales&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Comedians of Comedy, The&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Deathtrap&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Earth (Zemlya)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;For the Bible Tells Me So&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Guard Post, The (G.P. 506)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Housemaid, The (Hanyo)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;It Could Happen to You&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Last Supper, The&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Love Forbidden (Défense d&apos;aimer)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mask of Zorro, The&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Moulin Rouge&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Oklahoma!&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pieta&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Reclaim Your Brain (Free Rainer)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shadows and Fog&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Soul Survivors (a.k.a. The Killer Cut)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sweepers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Then She Found Me&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Up the Academy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Women in Love&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Adjustment Bureau, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bad Girls Go To Hell&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Blissfully Yours (Sud sanaeha)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Buud Yam&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cocoanuts, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Day of the Animals&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dragonphoenix Chronicles: Indomitable, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Flower of My Secret, The (La flor de mi secreto)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greaser&apos;s Palace&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Homeward Bound II: Lost in San Francisco&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Inferno&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Last Drop, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lord, Save Us from Your Followers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Man Who Came to Dinner, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mother, I Love You&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nine Months&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;People vs. Larry Flynt, The&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ragtime&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Separation, A (Jodaeiye Nader az Simin)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sometimes They Come Back&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Struck by Lightning&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Phantom Light&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Universal Soldier&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wild Rovers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;42 Up&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bachelor Party, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Big Picture, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Broadway Rhythm&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cinderella Liberty&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cry in the Dark, A&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Don Quixote&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Five Weeks in a Balloon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ghoul, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hole, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;In a Glass Cage (Tras el cristal)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Killjoy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Live Free or Die Hard&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Make Believe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Modern Times&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nature of Existence, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;P.S. Your Cat is Dead&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Quick and the Dead, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Saturn 3&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Smile&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Story of Mankind, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The First Men in the Moon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Troop Beverly Hills&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wheeler Dealers, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Amnèsia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Beekeeper, The (O melissokomos)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Born into Brothels&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Carefree&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Conjuring, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Design for Scandal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Empire&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Freeway II: Confessions of a Trickbaby&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hawks and Sparrows (Uccellacci e Uccellini)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;I Thank a Fool&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jude the Obscure&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Legend of the 7 Golden Vampires, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Love Letter&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Member of the Wedding, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;My Father the Hero (Mon père, ce héros.)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;One Crazy Summer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Poseidon Adventure, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;River, The (He liu)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Simpsons Movie, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Springfield Rifle&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tetsuo, the Ironman (Tetsuo)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;To Encourage the Others&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Vodka Lemon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Yellow Submarine&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;All Passion Spent&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Battle for Brooklyn&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bob le Flambeur&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Can&apos;t Hardly Wait&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Comedy, The&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Decoys&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Edmund Kean: Prince Among Lovers (Kean)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Forbidden Christ, The (Cristo proibito, Il)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gunfighters&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hunting Elephants&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italianamerican&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Late Phases&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Love Hina Again&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mattei Affair, The (Il caso Mattei)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mrs. Parkington&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Old Gringo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Place in the Sun, A&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Red Tent, The (Krasnaya palatka)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shaka Zulu: The Citadel&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;South Park: Imaginationland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tale of Tales (Skazka skazok)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;They&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Valentino: The Last Emperor&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Woodmans, The&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;66 Scenes From America&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bachelorette&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Big Trouble&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brøken, The (a.k.a. Broken, The)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Class, The (Entre les murs)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cyclomania&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dopamine&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fixed Bayonets!&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Girl in the Cadillac&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hollywood Complex, The&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;In Order of Disappearance (Kraftidioten)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kind of Loving, A&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lockdown&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Making the Grade&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mona Lisa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Naughty Girl&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Paperhouse&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Quiet Earth, The&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Scatter My Ashes at Bergdorf&apos;s&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Smiling Lieutenant, The&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Story of My Death&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Man Who Lived Again&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Twenty Days Without War (Dvadtsat dney bez voyny)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Wilby Conspiracy, The&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Movies by Price'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (MovieRental) (2)' name='federated.0c9bfhd13nrwao137h17j17pbihn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c9bfhd13nrwao137h17j17pbihn'>
+            <column datatype='real' name='[LocationID]' role='measure' type='quantitative' />
+            <column datatype='string' name='[MovieName]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[MovieName]' derivation='None' name='[none:MovieName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LocationID]' derivation='Sum' name='[sum:LocationID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.0c9bfhd13nrwao137h17j17pbihn].[none:MovieName:nk]' direction='ASC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+            <format attr='map-style' value='satellite' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c9bfhd13nrwao137h17j17pbihn].[none:MovieName:nk]' />
+              <lod column='[federated.0c9bfhd13nrwao137h17j17pbihn].[sum:LocationID:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0c9bfhd13nrwao137h17j17pbihn].[none:MovieName:nk]</rows>
+        <cols>[federated.0c9bfhd13nrwao137h17j17pbihn].[sum:Price:qk]</cols>
+      </table>
+      <simple-id uuid='{B0D67326-090C-4EA7-A754-0E06E16DF3D3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Movies by Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c9bfhd13nrwao137h17j17pbihn].[none:MovieName:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0c9bfhd13nrwao137h17j17pbihn].[none:MovieName:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AF4C3DB8-F7AF-411A-96D0-2C8A045F5689}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Movies by Price' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
